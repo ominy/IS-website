@@ -29,3 +29,11 @@ body, html {
 #sticky {
     position: sticky;
 }
+
+img {
+    transition: 0.3s all;
+}
+
+img:hover {
+	transform: scale(2)
+}
