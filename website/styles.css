@@ -1,0 +1,31 @@
+body, html {
+    height: 100%
+}
+
+.paralx1 {
+    background-image: url('images/DSC_0590.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paralx2 {
+    background-image: url('images/DSC04753.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sticky {
+    position: sticky;
+}
