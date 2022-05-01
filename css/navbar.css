@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-animation: 0.5s introCircle ease-in;
+          animation: 0.5s introCircle ease-in;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo {
+  padding: 0 0 0 2%;
+  margin: auto 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  opacity: 1;
+  -webkit-animation: 1s intro 0.5s forwards;
+          animation: 1s intro 0.5s forwards;
+}
+
+nav .logo span {
+  color: red;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 1em 0;
+  margin-right: 2%;
+}
+
+nav ul li {
+  padding: 0 1em;
+  display: inline;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  display: block;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.125em;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  border-radius: 5em;
+}
+
+nav ul li a:hover:after, nav ul li a:focus:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=navbar.css.map */

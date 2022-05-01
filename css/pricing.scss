@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1 {
+    padding: 75px 0 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.prices {
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    ul {
+        padding: 0;
+        border-top: solid 1px #CCCCCC;
+        li {
+            border-bottom: solid 1px #CCCCCC;
+            //margin: 0.5em;
+            div {
+                display: flex;
+                justify-content: space-between;
+                .price-info {
+                    width: 70%;
+                    margin: auto 0 auto auto;
+                }
+                p {
+                    padding: 0.5em;
+                    color: white;
+                    background-color: black;
+                    //font-weight: bold;
+                    border: solid 3px white;
+                    border-radius: 5em;
+                    width: 25%;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

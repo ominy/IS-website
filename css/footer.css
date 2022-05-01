@@ -1,0 +1,35 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #141414;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+footer a {
+  padding: 1em;
+  margin: 1em;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-envelope {
+  color: white;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,215 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  -webkit-perspective: 10px;
+          perspective: 10px;
+  padding: 0;
+  margin: 0;
+  -webkit-animation: 0.5s introCircle ease-in;
+          animation: 0.5s introCircle ease-in;
+}
+
+nav {
+  text-transform: uppercase;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-animation: 0.3s intro 0.5s ease-in forwards;
+          animation: 0.3s intro 0.5s ease-in forwards;
+}
+
+nav ul li {
+  padding: 1em;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  padding: 0.3em 0;
+  color: white;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125em;
+  background-color: red;
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  border-radius: 5em;
+}
+
+nav ul li a:hover:after, nav ul li a:focus:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@-webkit-keyframes introCircle {
+  from {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
+  }
+  to {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+  }
+}
+
+@keyframes introCircle {
+  from {
+    -webkit-clip-path: circle(0%);
+            clip-path: circle(0%);
+  }
+  to {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+  }
+}
+
+.p-section {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 100vh;
+  position: relative;
+}
+
+.content,
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.p-section.back {
+  z-index: -1;
+}
+
+.p-section.back .bg {
+  -webkit-transform: translateZ(-10px) scale(2);
+          transform: translateZ(-10px) scale(2);
+  background-size: cover;
+}
+
+#one .bg {
+  background-image: url("../albums/DSC04753.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.p-section.front {
+  z-index: 5;
+  background-color: black;
+}
+
+#three .bg {
+  background-image: url("../albums/DSC_0590.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: 0.3s intro 0.3s ease-in forwards;
+          animation: 0.3s intro 0.3s ease-in forwards;
+}
+
+.logo span {
+  color: red;
+}
+
+@-webkit-keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+footer p {
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

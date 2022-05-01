@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  padding: 75px 0 25px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.prices {
+  color: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: auto;
+}
+
+.prices ul {
+  padding: 0;
+  border-top: solid 1px #CCCCCC;
+}
+
+.prices ul li {
+  border-bottom: solid 1px #CCCCCC;
+}
+
+.prices ul li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prices ul li div .price-info {
+  width: 70%;
+  margin: auto 0 auto auto;
+}
+
+.prices ul li div p {
+  padding: 0.5em;
+  color: white;
+  background-color: black;
+  border: solid 3px white;
+  border-radius: 5em;
+  width: 25%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=pricing.css.map */
