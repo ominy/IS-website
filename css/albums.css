@@ -1,0 +1,19 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.albums {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.albums .album {
+  height: 200px;
+  width: 100px;
+  background: url("../albums/DSC_0590.jpg");
+}
+/*# sourceMappingURL=albums.css.map */
