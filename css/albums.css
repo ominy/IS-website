@@ -1,19 +1,66 @@
 html, body {
   padding: 0;
   margin: 0;
-  height: 100%;
+}
+
+.grid {
+  display: grid;
+      grid-template-columns: 350px 350px 350px;
+      grid-template-columns: repeat(3, auto);
+	gap: 1em;
+	justify-content: center;
+	margin: 2em 0;
+}
+
+.album-wrapper {
+	height: 450px;
+	width: 300px;
+	margin: auto;
+}
+
+.album-wrapper p {
+	position: relative;
+	top: 90%;
+	color: white;
 }
 
 .albums {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+	margin: 0 10%;
+	text-align: center;
 }
 
-.albums .album {
-  height: 200px;
-  width: 100px;
-  background: url("../albums/DSC_0590.jpg");
+.albums h1 {
+	margin: 5% 0 3%;
 }
-/*# sourceMappingURL=albums.css.map */
+
+.background {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#one {
+	background-image: url("../albums/DSC_0590.jpg");
+}
+
+#two {
+	background-image: url("../albums/DSC04753.jpg");
+}
+
+#three {
+	background-image: url("../albums/DSC_0590.jpg");
+}
+
+#four {
+	background-image: url("../albums/DSC04753.jpg");
+}
+
+#five {
+	background-image: url("../albums/DSC_0590.jpg");
+}
+
+#six {
+	background-image: url("../albums/DSC04753.jpg");
+}
+
+/*# sourceMappingURL=grid.css.map */

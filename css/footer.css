@@ -1,7 +1,5 @@
 footer {
-  position: absolute;
-  bottom: 0;
-  display: -webkit-box;
+  display: -webkt-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #141414;

@@ -1,0 +1,13 @@
+.main {
+	margin: 3% 5% 0;
+	display: flex;
+}
+
+.main .contacts {
+	margin: 5em 3em 0;
+}
+
+img {
+	height: 80vh;
+	width: auto;
+}

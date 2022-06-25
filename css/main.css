@@ -18,7 +18,7 @@ html, body {
           animation: 0.5s introCircle ease-in;
 }
 
-nav {
+/*nav {
   text-transform: uppercase;
   position: absolute;
   top: 30%;
@@ -83,7 +83,7 @@ nav ul li a:hover:after, nav ul li a:focus:after {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
-
+*/
 @-webkit-keyframes introCircle {
   from {
     -webkit-clip-path: circle(0%);
