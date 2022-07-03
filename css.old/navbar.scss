@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    //font-family: 'Lato', sans-serif;
+    //font-family: 'Red Hat Mono', monospace;
+    animation: 0.5s introCircle ease-in;
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    .logo {
+        //position: fixed;
+        padding: 0 0 0 2%;
+        margin: auto 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        opacity: 1;
+        span {
+            color: red;
+        }
+        animation: 1s intro 0.5s forwards;
+    }
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 1em 0;
+        margin-right: 2%;
+        li {
+            padding: 0 1em;
+            display: inline;
+            a {
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                display: block;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0.125em;
+                    bottom: 0;
+                    left: 0;
+                    background-color: red;
+                    //background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 100, 1));
+                    opacity: 0;
+                    transition: opacity 300ms, transform 300ms;
+                    transform-origin: center;
+                    transform: scale(0);
+                    border-radius: 5em;
+                }
+                &:hover:after, &:focus:after {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

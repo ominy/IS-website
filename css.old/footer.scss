@@ -1,0 +1,30 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    //margin: auto;
+    background-color: #141414;
+    justify-content: center;
+    width: 100%;
+    a {
+        padding: 1em;
+        margin: 1em;
+        text-decoration: none;
+    }
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-envelope {
+    color: white;
+}
